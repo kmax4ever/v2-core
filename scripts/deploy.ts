@@ -10,13 +10,18 @@ async function main() {
 
   console.log('xxx signer address', signer.address)
 
-  const UniswapV2Factory = await ethers.getContractFactory('UniswapV2Factory')
-  const uniswapV2Factory = await UniswapV2Factory.deploy(signer.address)
-  var fs = require('fs')
-  fs.writeFileSync('address.json', JSON.stringify({ uniswapV2Factory: uniswapV2Factory.target }, null, 4))
+  // const UniswapV2Factory = await ethers.getContractFactory('UniswapV2Factory')
+  // const uniswapV2Factory = await UniswapV2Factory.deploy(signer.address)
+  // var fs = require('fs')
+  // fs.writeFileSync('address.json', JSON.stringify({ uniswapV2Factory: uniswapV2Factory.target }, null, 4))
+
+  const Token = await ethers.getContractFactory('Token')
+  const token = await Token.deploy('K888', 'k888')
+
+  console.log('token adress', token.target)
 }
 
-main().catch((error) => {
+main().catch(error => {
   console.error(error)
   process.exitCode = 1
 })

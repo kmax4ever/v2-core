@@ -436,6 +436,41 @@
       "artifacts": [
         "UniswapV2Factory"
       ]
+    },
+    "/Users/kmax/Documents/WORKSPACE/uni-v3-contract/v2-core/contracts/Token.sol": {
+      "lastModificationDate": 1701016227496,
+      "contentHash": "876556899b7adc160c6f4c526bea3ad6",
+      "sourceName": "contracts/Token.sol",
+      "solcConfig": {
+        "version": "0.5.16",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "0.5.16"
+      ],
+      "artifacts": [
+        "Token"
+      ]
     }
   }
 }

@@ -3,6 +3,7 @@
 /* eslint-disable */
 export * as interfaces from "./interfaces";
 export * as test from "./test";
+export { Token__factory } from "./Token__factory";
 export { UniswapV2ERC20__factory } from "./UniswapV2ERC20__factory";
 export { UniswapV2Factory__factory } from "./UniswapV2Factory__factory";
 export { UniswapV2Pair__factory } from "./UniswapV2Pair__factory";
